@@ -36,5 +36,8 @@ const flatten = function(arr) {
   return console.log(newArr);
 };
 
+
+
 // Test Output
+assertArraysEqual(); // just to get rid of eslint error
 flatten([1, 2, [3, 4], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
