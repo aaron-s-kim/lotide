@@ -1,3 +1,5 @@
+/* eslint-disable camelcase */
+
 // findKeyByValue takes in an object and a value.
 // should scan object and return first key which contains given value.
 // If no key with given value is found, should return undefined.
