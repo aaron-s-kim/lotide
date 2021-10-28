@@ -22,11 +22,13 @@ const countLetters = function(str) {
     }
   }
   
-  return console.log(lCount);
+  return lCount;
+  // return console.log(lCount);
 };
 
 // Test Output
 countLetters("lighthouse in the house");
+assertEqual(countLetters("hello").l, 2);
 
 // // Expected output
 // {
