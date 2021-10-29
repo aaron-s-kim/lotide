@@ -1,4 +1,5 @@
-// console.assert() method writes an error message to the console if assertion is false. If assertion is true, nothing happens.
+// console.assert() method writes an error message to the console if assertion is false.
+// If assertion is true, nothing happens.
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
