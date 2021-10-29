@@ -24,6 +24,16 @@ const findKeyByValue = function(obj, val) {
   }
 };
 
+// Using for...in instead.
+// const findKeyByValue = function (obj, value) {
+//   for (const genre in obj) {
+//     if (obj[genre] === value) {
+//       return genre;
+//     }
+//   }
+//   return undefined;
+// };
+
 const bestTVShowsByGenre = {
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
