@@ -1,4 +1,4 @@
-// console.assert() method writes an error message to the console if assertion is false. If assertion is true, nothing happens.
+// assertEqual.js
 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -8,6 +8,8 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
+module.exports = assertEqual;
+
+// // Notes
+// we're passing var assertEqual (which points to our func)
+// and not calling assertEqual via assertEqual()

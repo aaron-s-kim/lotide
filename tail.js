@@ -1,17 +1,14 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// tail.js
 
 const tail = function(arr) {
   let tailArr = arr.slice(1);
   return tailArr;
 };
 
-// Test Case: Check the original array
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+module.exports = tail;
+
+// // Notes
+// array.slice(start, end)
+// returns shallow copy of portion of arr into new arr obj selected from start to end (end not included)
+// start and end represent the index of items in that array. Original array will not be modified.
+// arr = [a, b, c, d]; arr.slice(1) returns [b, c, d]
