@@ -1,13 +1,4 @@
-// console.assert() method writes an error message to the console if assertion is false.
-// If assertion is true, nothing happens.
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// eqArrays.js
 
 const eqArrays = function(a1, a2) {
   if (a1.length === a2.length) {
@@ -22,15 +13,7 @@ const eqArrays = function(a1, a2) {
   return true;
 };
 
-// Test eqArrays
-eqArrays([1, 2, 3], [1, 2, 3]); // => true
-eqArrays([1, 2, 3], [3, 2, 1]); // => false
-eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => true
-eqArrays(["1", "2", "3"], ["1", "2", 3]); // => false
+module.exports = eqArrays;
 
-// Test assertEqual(eqArrays)
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // true, true => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // false, false => should PASS
-
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), false); // true, false => should FAIL
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // false, true => should FAIL
+// // Notes
+// Checks to see if arrays are identical in length and elements (in order)
