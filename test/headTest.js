@@ -1,7 +1,7 @@
-// // test/headTest.js
+// test/headTest.js
 
 const assert = require('chai').assert;
-const head   = require('../head');
+const head = require('../head');
 
 describe("#head", () => {
   it("returns 1 for [1, 2, 3]", () => {
@@ -11,7 +11,6 @@ describe("#head", () => {
     assert.strictEqual(head(['5']), '5');
   });
 });
-
 
 // // Before conversion to Mocha Chai
 // const assertEqual = require('../assertEqual');

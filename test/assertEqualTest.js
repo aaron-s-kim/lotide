@@ -1,18 +1,9 @@
 // test/assertEqualTest.js
+// not converted to chai b/c redundant
 
-const assert = require('chai').assert;
+const assertEqual = require('../assertEqual');
 
-describe("#assert", () => {
-  it("returns false for non-matches", () => {
-    assert.notEqual("Lighthouse Labs", "Bootcamp");
-  });
-  it("returns true for identical matches", () => {
-    assert.strictEqual(1, 1);
-  });
-  it("returns false for non-identical matches", () => {
-    assert.notStrictEqual(1, "1");
-  });
-});
-
-// // Before conversion to Mocha Chai
-// const assertEqual = require('../assertEqual');
+// // TEST CODE
+// assertEqual("Lighthouse Labs", "Bootcamp"); // false => fail
+// assertEqual(1, 1); // true => pass
+// assertEqual(1, "1"); // false => fail
