@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@aaron-s-kim/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "lotide package",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/aaron-s-kim/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aaron Kim",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aaron-s-kim/lotide/issues"
